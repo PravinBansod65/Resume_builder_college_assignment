@@ -1,0 +1,108 @@
+
+*{
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+.container {
+    border: 2px solid #d000ff; 
+    background: transparent;
+}
+body{
+    background-image: url(./bg1.jpg);
+    background-size: cover;
+}
+h1 {
+    color: #007bff; 
+}
+
+.Initially{
+    display: none;
+    /* Hidden initially */
+
+}
+.resume, #resumeForm{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+
+}
+input {
+    background-color: transparent;
+   /* border: none; */
+   /* outline: none; */
+   font-size: 1.2 em;
+    font-weight: 600;
+    height: 30px;
+    border-radius: 5px;
+
+  }
+
+  label{
+    font-weight: bold;
+  }
+/* //- */
+
+.login_form_box:hover{
+    box-shadow: 1px 1px 16px rgb(203, 78, 209);
+    border: transparent;
+    transform: scale(0.99);
+  }
+
+  input:hover{
+    border-radius: 21px;
+    border-radius: 5px;
+    /* background: linear-gradient(225deg, #e6e6e6, #ffffff); */
+    box-shadow:  1px -1px 8px #df53cc,
+    -2px 2px 4px #67c5c3;
+}
+
+  button{
+    /* width: 410px    ; */
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 35px;
+    border: 0;
+    background-color: #63e04f;
+}
+button:hover{
+    cursor: pointer;
+    color: #fff;
+    background:rgb(208, 71, 210) ;
+    border:1px solid white;
+    box-shadow:  1px -1px 8px #df53cc,
+    -2px 2px 4px #67c5c3;
+
+}
+#photo{
+    display: none;
+}
+.photo{
+    display: block;
+    width: 400px;
+    background-color: #67c5c3;
+    color:#fff;
+    padding: 12px;
+    margin:  auto;
+    border-radius: 5px;
+    cursor:pointer;
+    
+}
+
+.photoUploaded{
+    background-color: #2fe413;
+    color:#fafeff;
+
+}
+.photo:hover{
+
+    transform: scale(0.95);
+}
+
+/* media screen properties to image upload text */
+@media (max-width: 500px) {
+    .photo{
+        width:200px;
+    }
+}

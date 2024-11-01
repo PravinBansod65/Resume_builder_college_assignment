@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css"> <!-- External CSS -->
+    <style>
+
+        body {
+            font-family: cursive;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="container login_form_box">
+        <h1 id="resumeHeading">Create your Resume</h1>
+        <form id="resumeForm">
+            <label for="name">Name:</label>
+            <input type="text" style="height: 30px;" id="name" required><br><br>
+
+            <label for="education">Qualification:</label>
+            <input type="text" id="education" required><br><br>            
+
+            <label class="photo" id="labelPhoto" for="photo">Upload Your Image</label>
+            <input type="file" accept="image/jpeg, image/png, image/jpg" id="photo"><br><br>
+
+            <label for="mobile">Mobile No:</label>
+            <input type="tel" id="mobile" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required><br><br>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" required><br><br>
+            
+            <label for="skills">Skills:</label>
+            <input type="text" id="skills"><br><br>
+            
+            <label for="hobbies">Hobbies:</label>
+            <input type="text" id="hobbies"><br><br>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+
+        <div class="Initially" id="resume">
+            <h2 style="text-decoration: underline; font-weight: bold;;">Resume</h2>
+            <p><img id="resumePhoto" alt="Your Photo" style="width:150px;height:150px;border-radius:50%;"><br></p>
+            <p><strong>Name:</strong> <span id="resumeName"></span></p>
+            <p><strong>Qualification:</strong> <span id="resumeEducation"></span></p>
+            <p><strong>Mobile No:</strong> <span id="resumeMobile"></span></p>
+            <p><strong>Email:</strong> <span id="resumeEmail"></span></p>
+            <p><strong>Address:</strong> <span id="resumeAddress"></span></p>
+            <p><strong>Skills:</strong> <span id="resumeSkills"></span></p>
+            <p><strong>Hobbies:</strong> <span id="resumeHobbies"></span></p>
+            <button id="hideButton" onclick="downloadResume()">Download Resume</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- External JavaScript -->
+</body>
+
+</html>
